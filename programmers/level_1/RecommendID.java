@@ -2,9 +2,6 @@
 // https://school.programmers.co.kr/learn/courses/30/lessons/72410
 // String 처리, StringBuilder, 정규표현식 사용 풀이
 
-import java.util.*;
-import java.util.regex.*;
-
 class Solution {
     public String solution(String new_id) {
         String step1 = new_id.toLowerCase();
@@ -18,13 +15,11 @@ class Solution {
         String step5 = step4.isEmpty()? "a" : step4;
         
         String step6 = step5.length() >= 16 ? 
-            step5.substring(0,15).replaceAll("[.]$","") : step5;
+            step5.substring(0, 15).replaceAll("[.]$","") : step5;
         
         StringBuilder step7 = new StringBuilder(step6);
-        
-        while(step7.length() < 3){
+        while(step7.length() < 3)
             step7.append(step7.charAt(step7.length()-1));
-        }
         
         return step7.toString();
     }

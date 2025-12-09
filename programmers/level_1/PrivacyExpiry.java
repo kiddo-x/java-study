@@ -4,7 +4,7 @@
 
 import java.util.*;
 
-public class Problem_개인정보수집유효기간 {
+class Solutin {
 
     public int convertDate(String s){
         int date = Integer.parseInt(s.substring(2,4))*28*12;
