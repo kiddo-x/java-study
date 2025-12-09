@@ -1,6 +1,6 @@
 // 프로그래머스 - 신규 아이디 추천 (Level 1)
 // https://school.programmers.co.kr/learn/courses/30/lessons/72410
-// String 처리, StringBuilder 사용 풀이
+// String 처리, StringBuilder, 정규표현식 사용 풀이
 
 import java.util.*;
 import java.util.regex.*;
