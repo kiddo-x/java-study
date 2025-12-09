@@ -1,18 +1,15 @@
 # 📘 Programmers Level 1 문제 풀이 모음
 
-## 개인정보 수집 유효기간 (Lv1)
-- HashMap + 날짜 변환
-- 만료 여부 계산
-- 기한 = 오늘 날짜 >= 시작일 + term*28
+| 문제 | 코드 | 핵심 키워드 | 난이도 |
+|------|------|-------------|--------|
+| 개인정보 수집 유효기간 | [PrivacyExpiry.java](./PrivacyExpiry.java) | 날짜변환, HashMap | ⭐ |
+| 신규 아이디 추천 | [RecommendID.java](./RecommendID.java) | 문자열, 정규표현식 | ⭐ |
+| … | … | … | … |
 
-📌 코드: (GitHub 파일 링크)
-https://github.com/kiddo-x/java-study/blob/main/programmers/level_1/Problem_%EA%B0%9C%EC%9D%B8%EC%A0%95%EB%B3%B4%EC%88%98%EC%A7%91%EC%9C%A0%ED%9A%A8%EA%B8%B0%EA%B0%84.java
+---
 
+## 코딩 규칙
 
-## 신규 아이디 추천 (Lv1)
-- String 처리
-- 정규표현식
-- StringBuilder
-
-📌 코드: (GitHub 파일 링크)
-https://github.com/kiddo-x/java-study/blob/main/programmers/level_1/Problem_%EC%8B%A0%EA%B7%9C%EC%95%84%EC%9D%B4%EB%94%94%EC%B6%94%EC%B2%9C
+- 클래스명은 문제명에 맞게 영어로 작성
+- 주석에 핵심 로직 문서화
+- 필요 시 시간복잡도 기재
