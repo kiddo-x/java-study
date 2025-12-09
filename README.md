@@ -28,7 +28,7 @@ java study log
 ## 📝 정리 문서
 | Day | 주제 | 링크 |
 |-----|------|------|
-| Day1-3 | Java 핵심 문법 | 📄 `Java-core-summary.md` |
+| Day1-3 | Java 핵심 문법 | 📄 [Java-core-summary.md](./docs/Java-core-summary.md) |
 
 ---
 
