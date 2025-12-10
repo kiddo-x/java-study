@@ -1,4 +1,4 @@
-public class Solution {
+public class NumberString {
     public int solution(String s) {
         String[] words = {"zero","one","two","three","four","five","six","seven","eight","nine"};
         
