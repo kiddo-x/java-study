@@ -153,9 +153,158 @@ int sum = List.of(1,2,3,4,5).stream()
 * 원본 변경 없이 데이터 처리 가능
 * 가독성이 좋아짐
 * 병렬 처리 쉽게 가능
-* 단, 지나치게 복잡한 Stream은 **오히려 가독성 저하** → for문이 더 나을 때도 있음
+* 단, 지나치게 복잡한 Stream은 **오히려 가독성 저하** → for문이 더 나을 때도 있음   
+   
 
 ---
 
+<br />
+<br />
+   
+      
+# 📌 Stream에서 가장 자주 쓰는 12가지 핵심 메서드
 
+*(코딩테스트 + 실무 공통)*
+
+---
+
+## 1. `filter(Predicate)`
+
+조건에 맞는 요소만 남김
+
+```java
+stream.filter(n -> n > 10)
+```
+
+---
+
+## 2. `map(Function)`
+
+값 변환(타입 변경 가능)
+
+```java
+stream.map(s -> s.length())
+```
+
+---
+
+## 3. `mapToInt / mapToLong / mapToDouble`
+
+원시형 스트림으로 변환 (성능 ↑)
+
+```java
+stream.mapToInt(Integer::intValue)
+```
+
+---
+
+## 4. `sorted() / sorted(Comparator)`
+
+정렬
+
+```java
+stream.sorted()  
+stream.sorted(Comparator.reverseOrder())
+```
+
+---
+
+## 5. `distinct()`
+
+중복 제거
+
+```java
+stream.distinct()
+```
+
+---
+
+## 6. `limit(n)`
+
+앞에서 n개만 가져오기
+
+```java
+stream.limit(3)
+```
+
+---
+
+## 7. `skip(n)`
+
+앞에서 n개 건너뛰기
+
+```java
+stream.skip(2)
+```
+
+---
+
+## 8. `anyMatch / allMatch / noneMatch`
+
+조건 만족 여부 체크 (return: boolean)
+
+```java
+stream.anyMatch(n -> n > 10);
+stream.allMatch(n -> n > 0);
+stream.noneMatch(n -> n < 0);
+```
+
+---
+
+## 9. `findFirst() / findAny()`
+
+첫 번째 요소 or 순서 상관없는 요소 (Optional 반환)
+
+```java
+stream.findFirst().orElse(-1);
+```
+
+---
+
+## 10. `collect(Collectors.toList(), toSet, toMap…)`
+
+```java
+List<Integer> list = stream.collect(Collectors.toList());
+```
+
+Map 변환:
+
+```java
+Map<String, Long> map =
+    stream.collect(Collectors.groupingBy(s -> s, Collectors.counting()));
+```
+
+---
+
+## 11. `reduce(identity, accumulator)`
+
+누산 작업(합계, 최대값 등)
+
+```java
+int sum = stream.reduce(0, Integer::sum);
+```
+
+---
+
+## 12. `forEach(consumer)`
+
+각 요소 반복 처리
+
+```java
+stream.forEach(System.out::println);
+```
+
+---
+
+# 📌 덤: 꼭 알아둬야 할 Collectors 5개
+
+| 기능      | 예시                              |
+| ------- | ------------------------------- |
+| 리스트로 수집 | `Collectors.toList()`           |
+| 세트로 수집  | `Collectors.toSet()`            |
+| 개수 세기   | `Collectors.counting()`         |
+| 그룹화     | `Collectors.groupingBy(key)`    |
+| 합계      | `Collectors.summingInt(n -> n)` |
+
+---
 
