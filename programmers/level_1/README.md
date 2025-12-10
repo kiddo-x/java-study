@@ -4,7 +4,8 @@
 |------|------|-------------|--------|
 | 개인정보 수집 유효기간 | [PrivacyExpiry.java](./PrivacyExpiry.java) | 날짜변환, HashMap | ⭐ |
 | 신규 아이디 추천 | [RecommendID.java](./RecommendID.java) | 문자열, 정규표현식 | ⭐ |
-| 신고 결과 받기 | [ReportResult](./ReportResult.java) | HashMap, HashSet | ⭐⭐ |
+| 신고 결과 받기 | [ReportResult.java](./ReportResult.java) | HashMap, HashSet | ⭐⭐ |
+| 숫자 문자열과 영단어 | [NumberStringAndWord.java](./NumberStringAndWord.java) | 문자열 |⭐|
 
 ---
 
