@@ -2,7 +2,8 @@
 // https://school.programmers.co.kr/learn/courses/30/lessons/72410
 // String 처리, StringBuilder, 정규표현식 사용 풀이
 
-class Solution {
+public class RecommendID {
+    
     public String solution(String new_id) {
         String step1 = new_id.toLowerCase();
         

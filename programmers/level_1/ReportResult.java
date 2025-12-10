@@ -3,7 +3,8 @@
 // HashMap + Set 사용 풀이
 
 import java.util.*;
-class Solution {
+public class ReportResult {
+    
     public int[] solution(String[] id_list, String[] report, int k) {
     	//key - 신고자아이디, value - 신고한아이디
         Map<String, Set<String>> reportList = new HashMap<>();

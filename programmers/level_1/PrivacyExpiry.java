@@ -4,32 +4,37 @@
 
 import java.util.*;
 
-class Solutin {
+public class PrivacyExpiry {
+    
+    public int[] solution(String today, String[] terms, String[] privacies) {
+        Map<String, Integer> termMap = new HashMap<>();
+        for (String term : terms) {
+            String[] parts = term.split(" ");
+            termMap.put(parts[0], Integer.parseInt(parts[1]) * 28);
+        }
 
-    public int convertDate(String s){
-        int date = Integer.parseInt(s.substring(2,4))*28*12;
-        date += Integer.parseInt(s.substring(5,7))*28;
-        date += Integer.parseInt(s.substring(8,10));
-        return date;
+        int todayDays = convertToDays(today);
+        List<Integer> expiredIndexes = new ArrayList<>();
+
+        for (int i = 0; i < privacies.length; i++) {
+            String[] parts = privacies[i].split(" ");
+            String date = parts[0];
+            String termType = parts[1];
+
+            int privacyDays = convertToDays(date) + termMap.get(termType);
+            if (privacyDays <= todayDays) {
+                expiredIndexes.add(i + 1);
+            }
+        }
+
+        return expiredIndexes.stream().mapToInt(i -> i).toArray();
     }
 
-    public int[] solution(String today, String[] terms, String[] privacies) {
-        HashMap<Character, Integer> termsMap = new HashMap<>();
-        for(String term : terms){
-            int t = Integer.parseInt(term.substring(2))*28;
-            termsMap.put(term.charAt(0), t);
-        }
-        
-        List<Integer> answerList = new ArrayList<>();
-        int i = 1;
-        for(String privacy : privacies){
-            if(convertDate(today) >= 
-               convertDate(privacy) + termsMap.get(privacy.charAt(11))){
-               answerList.add(i); 
-            }
-            i++;
-        }
-
-        return answerList.stream().mapToInt(Integer::intValue).toArray();
+    private int convertToDays(String date) {
+        String[] parts = date.split("\\.");
+        int year = Integer.parseInt(parts[0]);
+        int month = Integer.parseInt(parts[1]);
+        int day = Integer.parseInt(parts[2]);
+        return year * 12 * 28 + month * 28 + day;
     }
 }
