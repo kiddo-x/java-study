@@ -8,6 +8,7 @@
 | 숫자 문자열과 영단어 | [NumberString.java](./NumberString.java) | String |⭐|
 | 로또 최고 순위와 최저 순위 | [LottoRank.java](./LottoRank.java) | HashSet, String |⭐ |
 | 완주하지 못한 선수 | [IncompleteParticipant.java](./IncompleteParticipant.java) | HashMap |⭐ |
+| 모의고사 | [MockExam.java](./MockExam.java) | ArrayList | ⭐ |
 
 ---
 
