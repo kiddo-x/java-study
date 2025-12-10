@@ -3,9 +3,10 @@
 | 문제 | 코드 | 핵심 키워드 | 난이도 |
 |------|------|-------------|--------|
 | 개인정보 수집 유효기간 | [PrivacyExpiry.java](./PrivacyExpiry.java) | 날짜변환, HashMap | ⭐ |
-| 신규 아이디 추천 | [RecommendID.java](./RecommendID.java) | 문자열, 정규표현식 | ⭐ |
+| 신규 아이디 추천 | [RecommendID.java](./RecommendID.java) | String, Regex | ⭐ |
 | 신고 결과 받기 | [ReportResult.java](./ReportResult.java) | HashMap, HashSet | ⭐⭐ |
-| 숫자 문자열과 영단어 | [NumberString.java](./NumberString.java) | 문자열 |⭐|
+| 숫자 문자열과 영단어 | [NumberString.java](./NumberString.java) | String |⭐|
+| 로또 최고 순위와 최저 순위 | [LottoRank.java](./LottoRank.java) | HashSet, String |⭐ |
 
 ---
 
