@@ -21,6 +21,10 @@
 | 최댓값과 최솟값 | [MaxAndMin.java](./level_2/MaxAndMin.java) | String, StringBuilder | ⭐ |
 | JadenCase 문자열 만들기 | [JadenCaseString.java](./level_2/JadenCaseString.java) | StringBuilder, Character | ⭐ |
 | 최솟값 만들기 | [CreateMinimum.java](./level_2/CreateMinimum.java) | Arrays, 그리디 | ⭐ |
+| 타켓넘버 | [TargetNumber.java](./level_2/TargetNumber.java) | DFS | ⭐ |
+| 전화번호 목록 | [PhoneNumberList.java](./level_2/PhoneNumberList.java) | Arrays, String | ⭐ |
+| H-index | [H_index.java](./level_2/H_index.java) | Arrays |⭐ |
+| 소수 찾기 | [FindPrimeNumber](./level_2/FindPrimeNumber.java) | DFS, 소수판별 | ⭐⭐ |
 
 
 ---
