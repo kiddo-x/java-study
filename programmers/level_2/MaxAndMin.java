@@ -6,20 +6,16 @@ package programmers.level_2;
 
 public class MaxAndMin {
         public String solution(String s) {
-        int maxNum = -999999999;
-        int minNum = 999999999;
+        int maxNum = Integer.MIN_VALUE;
+        int minNum = Integer.MAX_VALUE;
         
         String[] numArray = s.split(" ");
         for(String numString : numArray){
-            maxNum = Math.max(maxNum, Integer.parseInt(numString));
-            minNum = Math.min(minNum, Integer.parseInt(numString));
+            int value = Integer.parseInt(numString);
+            maxNum = Math.max(maxNum, value);
+            minNum = Math.min(minNum, value);
         }
         
-        StringBuilder answer = new StringBuilder();
-        return answer
-            .append(String.valueOf(minNum))
-            .append(" ")
-            .append(String.valueOf(maxNum))
-            .toString();
+        return minNum + " " + maxNum;
     }
 }
