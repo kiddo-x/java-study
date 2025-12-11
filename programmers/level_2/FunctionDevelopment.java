@@ -10,7 +10,7 @@ import java.util.List;
 import java.util.Queue;
 
 public class FunctionDevelopment {
-        public int[] solution(int[] progresses, int[] speeds) {
+    public int[] solution(int[] progresses, int[] speeds) {
         Queue<Integer> process = new LinkedList<>();
         for(int i=0; i<progresses.length; i++){
             // 올림 계산할 때 double 형 변환 필요

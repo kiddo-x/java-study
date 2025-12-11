@@ -5,7 +5,7 @@
 package programmers.level_2;
 
 public class MaxAndMin {
-        public String solution(String s) {
+    public String solution(String s) {
         int maxNum = Integer.MIN_VALUE;
         int minNum = Integer.MAX_VALUE;
         
