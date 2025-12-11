@@ -12,6 +12,15 @@
 
 ---
 
+# 📘 Programmers Level 2 문제 풀이 모음
+
+| 문제 | 코드 | 핵심 키워드 | 난이도 |
+|------|------|-------------|--------|
+| 기능개발 | [FunctionDevelopment.java](./level_2/FunctionDevelopment.java) | Queue, 올림 | ⭐ |
+
+
+---
+
 ## 코딩 규칙
 
 - 클래스명은 문제명에 맞게 영어로 작성
