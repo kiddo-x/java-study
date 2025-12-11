@@ -17,7 +17,9 @@
 | 문제 | 코드 | 핵심 키워드 | 난이도 |
 |------|------|-------------|--------|
 | 기능개발 | [FunctionDevelopment.java](./level_2/FunctionDevelopment.java) | Queue, 올림 | ⭐ |
-|올바른 괄호 | [CorrectParentheses](./level_2/CorrectParentheses.java)|Queue|⭐|
+|올바른 괄호 | [CorrectParentheses.java](./level_2/CorrectParentheses.java)|Queue|⭐|
+| 최댓값과 최솟값 | [MaxAndMin.java](./level_2/MaxAndMin.java) | String split, StringBuilder | ⭐ |
+| JadenCase 문자열 만들기 | [JadenCaseString.java](./level_2/JadenCaseString.java) | StringBuilder, Character | ⭐ |
 
 
 ---
