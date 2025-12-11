@@ -17,6 +17,7 @@
 | 문제 | 코드 | 핵심 키워드 | 난이도 |
 |------|------|-------------|--------|
 | 기능개발 | [FunctionDevelopment.java](./level_2/FunctionDevelopment.java) | Queue, 올림 | ⭐ |
+|올바른 괄호 | [CorrectParentheses](./level_2/CorrectParentheses.java)|Queue|⭐|
 
 
 ---
