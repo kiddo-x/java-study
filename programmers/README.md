@@ -22,13 +22,15 @@
 | 기능개발 | [FunctionDevelopment.java](./level_2/FunctionDevelopment.java) | Queue, Math.ceil | ⭐ |
 | 소수 찾기 | [FindPrimeNumber.java](./level_2/FindPrimeNumber.java) | DFS, PrimeNumber | ⭐⭐ |
 | 숫자의 표현 | [ExpressionNumber.java](./level_2/ExpressionNumber.java) | TwoPointer or Queue | ⭐ |
+| 영어 끝말잇기 | [EnglishWordChain.java](./level_2/EnglishWordChain.java) | Set |⭐|
 | 올바른 괄호 | [CorrectParentheses.java](./level_2/CorrectParentheses.java)|Queue|⭐|
+| 이진변환 반복하기 | [BinaryConversion.java](./level_2/BinaryConversion.java) | String | ⭐ |
 | 전화번호 목록 | [PhoneNumberList.java](./level_2/PhoneNumberList.java) | Arrays, String | ⭐ |
 | 최댓값과 최솟값 | [MaxAndMin.java](./level_2/MaxAndMin.java) | String, StringBuilder | ⭐ |
 | 최솟값 만들기 | [CreateMinimum.java](./level_2/CreateMinimum.java) | Arrays, Greedy | ⭐ |
 | 카펫 | [Carpet.java](./level_2/Carpet.java) | 완전탐색 |⭐ |
 | 타켓넘버 | [TargetNumber.java](./level_2/TargetNumber.java) | DFS | ⭐ |
-| 파일명 정렬 | [SortingFilename](./level_2/SortingFilename.java) | String, Regex, Comparator | ⭐⭐ | 
+| 파일명 정렬 | [SortingFilename.java](./level_2/SortingFilename.java) | String, Regex, Comparator | ⭐⭐ | 
 | 프로세스 | [Process.java](./level_2/Process.java) | Queue, PriorityQueue | ⭐⭐ | 
 
 
