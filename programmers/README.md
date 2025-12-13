@@ -46,6 +46,7 @@
 
 | 문제 | 코드 | 핵심 키워드 | 난이도 |
 |------|------|-------------|--------|
+| 디스크 컨트롤러 | [DiskController.java](./level_3/DiskController.java) | PriorityQueue, Sorting | ⭐⭐⭐ |
 | 베스트앨범 | [BestAlbum.java](./level_3/BestAlbum.java) | Sorting, Map | ⭐⭐ |
 
 ---
