@@ -7,11 +7,13 @@ package programmers.level_2;
 public class JadenCaseString {
     public String solution(String s) {
         StringBuilder answer = new StringBuilder();
+
         for(int i=0; i<s.length(); i++){
             char c = s.charAt(i);
             if (i == 0 || s.charAt(i - 1) == ' ') {   // 단어의 첫 글자
                 if (Character.isLetter(c)) 
                     answer.append(Character.toUpperCase(c));
+
                 else answer.append(c); // 숫자 등
             } 
             else answer.append(Character.toLowerCase(c));

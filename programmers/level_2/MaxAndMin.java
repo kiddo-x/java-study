@@ -12,6 +12,7 @@ public class MaxAndMin {
         String[] numArray = s.split(" ");
         for(String numString : numArray){
             int value = Integer.parseInt(numString);
+            
             maxNum = Math.max(maxNum, value);
             minNum = Math.min(minNum, value);
         }
