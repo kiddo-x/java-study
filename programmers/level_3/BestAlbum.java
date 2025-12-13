@@ -36,8 +36,8 @@ public class BestAlbum {
         }
         
         // 장르 정렬 (재생 횟수 내림차순)
-        List<String> genreOrder = genrePlays.stream()
-            .sort((a, b) -> b.getValue() - a.getValue())
+        List<String> genreOrder = genrePlays.entrySet().stream()
+            .sorted((a, b) -> b.getValue() - a.getValue())
             .map(Map.Entry::getKey)
             .toList();
         
