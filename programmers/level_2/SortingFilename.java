@@ -1,7 +1,7 @@
 // 프로그래머스 Level 2 - 파일명 정렬
 // https://school.programmers.co.kr/learn/courses/30/lessons/17686
 // 정규표현식, Comparator 이용
-// 문자열 처리
+// 문자열 처리, 정렬
 
 package programmers.level_2;
 

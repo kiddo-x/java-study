@@ -12,6 +12,9 @@
 
 ---
 
+<br/>
+<br/>
+
 # 📘 Programmers Level 2 문제 풀이 모음
 
 | 문제 | 코드 | 핵심 키워드 | 난이도 |
@@ -30,9 +33,20 @@
 | 최솟값 만들기 | [CreateMinimum.java](./level_2/CreateMinimum.java) | Arrays, Greedy | ⭐ |
 | 카펫 | [Carpet.java](./level_2/Carpet.java) | 완전탐색 |⭐ |
 | 타켓넘버 | [TargetNumber.java](./level_2/TargetNumber.java) | DFS | ⭐ |
-| 파일명 정렬 | [SortingFilename.java](./level_2/SortingFilename.java) | String, Regex, Comparator | ⭐⭐ | 
+| 파일명 정렬 | [SortingFilename.java](./level_2/SortingFilename.java) | String, Regex, Sort | ⭐⭐ | 
 | 프로세스 | [Process.java](./level_2/Process.java) | Queue, PriorityQueue | ⭐⭐ | 
 
+---
+
+
+<br/>
+<br/>
+
+# 📘 Programmers Level 3 문제 풀이 모음
+
+| 문제 | 코드 | 핵심 키워드 | 난이도 |
+|------|------|-------------|--------|
+| 베스트앨범 | [BestAlbum.java](./level_3/BestAlbum.java) | Sorting, Map | ⭐⭐ |
 
 ---
 
