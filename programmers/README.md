@@ -48,6 +48,8 @@
 |------|------|-------------|--------|
 | 디스크 컨트롤러 | [DiskController.java](./level_3/DiskController.java) | PriorityQueue, Sorting | ⭐⭐⭐ |
 | 베스트앨범 | [BestAlbum.java](./level_3/BestAlbum.java) | Sorting, Map | ⭐⭐ |
+| 여행경로 | [TravelPath.java](./level_3/TravelPath.java) | DFS, 완전탐색 | ⭐⭐ |
+| 이중우선순위 큐 | [DualPriorityQueue.java](./level_3/DualPriorityQueue.java) | TreeMap | ⭐⭐ | 
 
 ---
 
