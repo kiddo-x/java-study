@@ -71,7 +71,7 @@
 
 ## 🧠 현재까지 푼 프로그래머스 문제
 
-**[📘 Programmers Level 1 문제 풀이 모음](./programmers/level_1/README.md)**
+**[📘 Programmers Level 1-3 문제 풀이 모음](./programmers/README.md)**
 
 ---
 
