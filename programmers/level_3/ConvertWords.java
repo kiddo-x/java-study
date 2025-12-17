@@ -16,13 +16,11 @@ public class ConvertWords {
         
         q.offer(new Word(begin, 0));
         
-        int answer = 0;
         while(!q.isEmpty()){
             Word cur = q.poll();
             
             if(cur.word.equals(target))
                 return cur.depth;
-            
             
             for(int i=0; i<words.length; i++){
                 if(!visited[i] && check(cur.word, words[i])){

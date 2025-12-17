@@ -1,16 +1,16 @@
 
-# 📘 SRP / OCP 정리 
+#  SRP / OCP 정리 
 
-# 🎯 SRP & OCP — 객체지향 설계 원칙 정리
+#  SRP & OCP — 객체지향 설계 원칙 정리
 
 본 문서는 SOLID 중 **SRP(단일 책임 원칙)** 과 **OCP(개방-폐쇄 원칙)** 을 정리하고,  
 직접 만든 실습 예제를 포함한 기록용 문서입니다.
 
 ---
 
-# ✅ 1. SRP — Single Responsibility Principle (단일 책임 원칙)
+#  1. SRP — Single Responsibility Principle (단일 책임 원칙)
 
-## 📌 개념
+##  개념
 > **하나의 클래스는 하나의 책임만 가져야 한다.**  
 > 변경 이유가 2개 이상이면 SRP를 위반한 것이다.
 
@@ -21,7 +21,7 @@
 
 ---
 
-## 📉 SRP 위반 예시
+##  SRP 위반 예시
 
 ```java
 // 1) 회원 정보 관리
@@ -43,7 +43,7 @@ class MemberService {
 
 ---
 
-## ✅ SRP 준수 리팩터링
+##  SRP 준수 리팩터링
 
 ```java
 class MemberService {
@@ -68,16 +68,16 @@ class FileWriter {
 
 ---
 
-# ✔ **실습 1 — SRP(단일 책임 원칙) 위반 코드 리팩토링**
+#  **실습 1 — SRP(단일 책임 원칙) 위반 코드 리팩토링**
 
 아래 코드는 **하나의 클래스가 ‘너무 많은 역할’을 수행하는 SRP 위반 코드**다.
 문제를 읽고, *SRP를 만족하도록 클래스를 분리*해보자.
 
 ---
 
-## 📝 **문제 — 사용자 회원가입 처리**
+##  **문제 — 사용자 회원가입 처리**
 
-### ❌ 아래 코드는 SRP를 심하게 위반하고 있다.
+###  아래 코드는 SRP를 심하게 위반하고 있다.
 
 ```java
 class UserService {
@@ -107,7 +107,7 @@ class UserService {
 }
 ```
 
-### 🎯 요구사항
+###  요구사항
 
 SRP에 따라 다음 책임을 각각 **별도의 클래스로 분리**해라.
 
@@ -174,9 +174,9 @@ class EmailService {
 
 ---
 
-# 🚀 2. OCP — Open Closed Principle (개방-폐쇄 원칙)
+#  2. OCP — Open Closed Principle (개방-폐쇄 원칙)
 
-## 📌 개념
+##  개념
 
 > **확장에는 열려 있고, 변경에는 닫혀 있어야 한다.**
 > 새로운 기능을 추가할 때 기존 코드를 수정하지 말아야 한다.
@@ -189,7 +189,7 @@ class EmailService {
 
 ---
 
-## 📉 OCP 위반 예시
+##  OCP 위반 예시
 
 ```java
 class PaymentService {
@@ -208,7 +208,7 @@ class PaymentService {
 
 ---
 
-## ✅ OCP 준수 리팩터링 (전략 패턴 적용)
+##  OCP 준수 리팩터링 (전략 패턴 적용)
 
 ```java
 interface PaymentStrategy {
@@ -247,15 +247,15 @@ class PaymentService {
 
 ---
 
-# ✔ **실습 2 — OCP(개방-폐쇄 원칙) 문제**
+#  **실습 2 — OCP(개방-폐쇄 원칙) 문제**
 
 아래 코드는 변경이 생기면 `if-else`를 계속 늘려야 하는 **OCP 위반 코드**다.
 
 ---
 
-## 📝 **문제 — 할인 정책 적용**
+##  **문제 — 할인 정책 적용**
 
-### ❌ 아래는 OCP를 위반하는 코드
+###  아래는 OCP를 위반하는 코드
 
 ```java
 class DiscountService {
@@ -271,7 +271,7 @@ class DiscountService {
 }
 ```
 
-### 🎯 요구사항
+###  요구사항
 
 1. 할인 정책을 인터페이스 `DiscountPolicy`로 추상화하라.
 2. VIP, GOLD, NONE 정책을 각각 클래스로 만들어라.
@@ -319,13 +319,13 @@ class DiscountService {
 
 ```
 
-# ✔ **실습 3 — SRP + OCP 복합 문제 (실전형)**
+#  **실습 3 — SRP + OCP 복합 문제 (실전형)**
 
 ---
 
-## 📝 **문제 — 결제(Payment) 시스템 리팩토링**
+##  **문제 — 결제(Payment) 시스템 리팩토링**
 
-### ❌ 아래 코드는 SRP/OCP 둘 다 위반한다.
+###  아래 코드는 SRP/OCP 둘 다 위반한다.
 
 ```java
 class PaymentProcessor {
@@ -351,7 +351,7 @@ class PaymentProcessor {
 }
 ```
 
-### 🎯 요구사항
+###  요구사항
 
 1. 결제 수단(Card, Kakao, Naver)을 인터페이스로 추상화(OCP 만족).
 2. 결제 검증, 결제 처리, 로그 기록을 각각 다른 책임으로 분리(SRP 만족).
@@ -414,7 +414,7 @@ class LogService{
 ```
 ---
 
-# 🧩 마무리
+#  요약
 
 | 원칙      | 요약                           |
 | ------- | ---------------------------- |
@@ -425,7 +425,7 @@ class LogService{
 
 ---
 
-# 📎 참고
+#  참고
 
 * SOLID 개념 정리 문서(추가 예정)
 * Strategy 패턴 문서(추가 예정)
