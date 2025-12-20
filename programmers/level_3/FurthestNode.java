@@ -1,6 +1,7 @@
 // 프로그래머스 - 가장 먼 노드 ㅣ Level 3
 // https://school.programmers.co.kr/learn/courses/30/lessons/49189
 // BFS 사용, 인접 리스트로 그래프 표현
+// 시간복잡도 O(V + E)
 
 package programmers.level_3;
 
