@@ -52,6 +52,7 @@
 | 단어변환 | [ConvertWords.java](./level_3/ConvertWords.java) | BFS | ⭐ |
 | 디스크 컨트롤러 | [DiskController.java](./level_3/DiskController.java) | PriorityQueue, Sorting | ⭐⭐⭐ |
 | 베스트앨범 | [BestAlbum.java](./level_3/BestAlbum.java) | Sorting, Map | ⭐⭐ |
+| 보행자 천국 | [PedestrianParadise.java](./level_3/PedestrianParadise.java) | DP | ⭐⭐ | 
 | 섬 연결하기 | [ConnectingIslands.java](./level_3/ConnectingIslands.java) | Kruskal, MST, Union-Find | ⭐⭐⭐ |
 | 여행경로 | [TravelPath.java](./level_3/TravelPath.java) | DFS, 완전탐색 | ⭐⭐ |
 | 이중우선순위 큐 | [DualPriorityQueue.java](./level_3/DualPriorityQueue.java) | TreeMap | ⭐⭐ | 
