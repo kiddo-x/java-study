@@ -46,6 +46,7 @@
 
 | 문제 | 코드 | 핵심 키워드 | 난이도 |
 |------|------|-------------|--------|
+| N으로 표현 | [ExpressWithN.java](./level_3/ExpressWithN.java) | DP, Set | ⭐⭐⭐ |
 | 가장 먼 노드 | [FurthestNode.java](./level_3/FurthestNode.java) | BFS, Graph | ⭐⭐ |
 | 네트워크 | [Network.java](./level_3/Network.java) | DFS | ⭐ |
 | 단속카메라 | [TrafficCamera.java](./level_3/TrafficCamera.java) | Greedy | ⭐ |
